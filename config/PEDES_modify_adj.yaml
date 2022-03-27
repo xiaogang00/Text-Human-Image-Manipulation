@@ -1,0 +1,50 @@
+# logger options
+image_save_iter: 1000
+image_display_iter: 10
+display_size: 8
+snapshot_save_iter: 1000
+log_iter: 10
+
+# optimization options
+max_iter: 1000000
+batch_size: 1
+weight_decay: 0.0001
+beta1: 0.5
+beta2: 0.999
+init: kaiming
+lr: 0.0001
+lr_policy: step
+step_size: 100000
+gamma: 0.5
+
+# model options
+gen:
+  dim: 64
+  mlp_dim: 1024
+  style_dim: 256
+  activ: relu
+  n_downsample: 3
+  n_res: 2
+  pad_type: reflect
+dis:
+  dim: 64
+  norm: none
+  activ: lrelu
+  n_layer: 4
+  gan_type: lsgan
+  num_scales: 3
+  pad_type: reflect
+
+# data options
+input_dim_a: 3
+input_dim_b: 3
+num_workers: 8
+new_size: 128
+word_num: 30
+rnn_type: LSTM
+TEXT_EMBEDDING_DIM: 256
+
+data_folder_test_a: 'dir_to_CUHK-PEDES/CUHK-PEDES/imgs'
+data_list_test_a: ./evaluation_modify_adj.json
+data_folder_test_b: 'dir_to_CUHK-PEDES/CUHK-PEDES/imgs'
+data_list_test_b: ./evaluation_modify_adj.json

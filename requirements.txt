@@ -1,0 +1,10 @@
+argparse==1.1
+torch==0.4.1
+torchvision==0.2.1
+numpy==1.14.5
+imageio==2.3.0
+Pillow==5.2.0
+opencv-python==3.4.2.16
+nltk==3.3
+PyYAML==3.12
+scikit-image==0.14.1
