@@ -1,6 +1,6 @@
 # Text-Guided Human Image Manipulation via Image-Text Shared Space
 
-This is a pytorch project for the paper [**Text-Guided Human Image Manipulation via Image-Text Shared Space**] by Xiaogang Xu, Ying-cong Chen, Xin Tao, and Jiaya Jia presented at **TPAMI**.
+This is a pytorch project for the paper **Text-Guided Human Image Manipulation via Image-Text Shared Space** by Xiaogang Xu, Ying-cong Chen, Xin Tao, and Jiaya Jia presented at **TPAMI**.
 
 ## Introduction
 
@@ -45,7 +45,9 @@ pip install -r requirements.txt
 
 ## Prepare dataset:
 - Download CUHK-PEDES dataset, link: https://github.com/ShuangLI59/Person-Search-with-Natural-Language-Description. There should be imgs/ and caption_all.json.
+
 - Use the openpose for pose detection, and obtain the pose of each image in imgs/. Place them in pose_imgs/ with the same directory structure of imgs/. You can download the pose information (we remove the image whose pose can not be accurately detected) from link: https://drive.google.com/file/d/1nd5QNLB586Qc4KCPMde954No88nbC-jX/view?usp=sharing.
+
 - Modify the path of dataset in the config yaml.
 
 
